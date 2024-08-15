@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 2</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+</head>
+<body>
+    <!--upper devition with style-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12" style="background-color: #333; color: #fff; padding: 10px;">
+                <h1>Information</h1>
+            </div>
+        </div>
+    </div>
+
+     <!--make a devition banner that congratulate by passing the Challenge 1-->
+     <div class="container" style="margin-top: 148px;">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card" style="margin-top: 10px;">
+                    <div class="card-body" style="border: 1px solid;border-radius: 10px; text-align: center;">
+                        <h4>Note:</h4>
+                        <p>This is the Leaking Of sensetive information because of the fact that
+                            all website has a Information Cache Service.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Make a button in the center that can redirect to other page when click-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" style="text-align: center; margin-top: 20px;">
+                <button type="button" class="btn btn-dark" id="submit">Lets Go To The Challenge</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <!--lower devition with style-->
+    <div class="container-fluid" style="margin-top: 225px;">
+        <div class="row">
+            <div class="col-md-12" style="background-color: #333; color: #fff; padding: 10px;">
+                <p>Mr.Jude Conrado © 2024 MyChalenge. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap/bootstrap.min.js"></script>
+</body>
+<script>
+    //make a the button rederect to other page
+    document.getElementById('submit').addEventListener('click', function(event){
+        event.preventDefault(); // to prevent form from submitting normally
+        window.location.href = '/mychallenge/Challenge_2/Challenge2_question.html';  // replace 'Challenge_2/index.html' with your desired URL
+    });
+
+   
+</script>
+</html>

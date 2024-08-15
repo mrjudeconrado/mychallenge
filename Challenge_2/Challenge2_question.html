@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 2</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+</head>
+<body>
+    <!--upper devition with style-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12" style="background-color: #333; color: #fff; padding: 10px;">
+                <h1>Challenge 2</h1>
+            </div>
+        </div>
+    </div>
+
+     <!--divition for question-->
+     <div class="container" style="margin-top: 50px;">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card" style="margin-top: 10px;">
+                    <div class="card-body" style="border: 1px solid;border-radius: 10px;">
+                        <h4>Question: 2</h4>
+                        <p>All Of Sensetive Data Is Leaking</p>
+                        <p>This Challenge is about the leak of sensitive data, investegate who leak the data.</p>
+                        <a href="message/Challenge2_inbox.html" style="text-decoration: none;">This is the Message Inbox</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--middle box with 1 text fild-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card" style="margin-top: 10px;">
+                    <div class="card-body" style="border: 1px solid;border-radius: 10px;">
+                        <form>
+                            <div class="form-group" >
+                                <label for="exampleFormControlInput1">Answer Here:</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Put The Correct Answer" style="border: 1px solid;">
+                            </div>
+                            <button type="submit" id="submit" class="btn btn-dark"
+                            style="margin-top: 20px;">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--make me a devition that can put <p>-->
+        <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card" style="margin-top: 10px;">
+                    <div class="card-body" style="border: 1px solid;border-radius: 10px;">
+                        <p>This is the personel in admin Department; james,clide,jneth,auna,laura,zed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--lower devition with style-->
+    <div class="container-fluid" style="margin-top: 65px;">
+        <div class="row">
+            <div class="col-md-12" style="background-color: #333; color: #fff; padding: 10px;">
+                <p>Mr.Jude Conrado © 2024 MyChalenge. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap/bootstrap.min.js"></script>
+</body>
+<script>
+    //when the submit button is clicked and check the exampleFormControlInput1 that is an id if 123 is entered
+    document.getElementById('submit').addEventListener('click', function(event){
+        event.preventDefault(); // to prevent form from submitting normally
+        var inputValue = document.getElementById('exampleFormControlInput1').value;
+        if(inputValue == "james,zed"){
+            window.location.href = 'Challenge2_complited.html';  // replace 'index.html' with your desired URL
+        }else if (inputValue ==''){
+            alert('No Answer Detected!');
+        }else{
+            alert('Wrong Answer!');
+        }
+    });  
+</script>
+</html>
